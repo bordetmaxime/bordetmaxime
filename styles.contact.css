@@ -6,45 +6,47 @@ color: grey
 
 main{height: 100vh;
     display:flex;
+    flex-direction: column;
     justify-content:center;
     align-items:center;
 }
 
-form{
-
-    width:50%;
-    height: 50%
-}
-
-.formulaire{
-    display:flex;
-    widht: 100%;
-    height:50vh;
-    border: 2px greenyellow solid;
-    padding: 50px;
-    border-radius: 30px
-}
-
-.div__left{
-    display:flex;
-    flex-direction: column;
-    height: 100%;
-    width: 50%;
+.container
+{ padding : 80px;
+    border : 2px solid greenyellow;
+    border-radius: 30px;
+    text-align: center;
     font-size: 2em;
+    font-family: sans-serif;
 }
 
-.div__right{
-    display:flex;
-    flex-direction: column;
-    height: 100%;
-    width: 50%;
-    font-size: 2em;
+h1{padding-top: 2px;
+    margin-top: 0px;
+    color: greenyellow
 }
 
-.item
-{display: flex;
-flex-direction: column;}
-
-.textarea{
-    height: 30vh
+.container a{
+    text-decoration: none;
+    color: grey
 }
+
+.container a:hover{
+    color:white;
+  text-shadow: 1px 1px 2px black, 0 0 1em greenyellow, 0 0 0.2em greenyellow;
+
+}
+
+.contact a{
+    text-decoration : none;
+    font-size: 2em
+}
+.contact a:hover{
+    color:white;
+  text-shadow: 1px 1px 2px black, 0 0 1em greenyellow, 0 0 0.2em greenyellow;
+
+}
+
+
+
+
+
