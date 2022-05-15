@@ -622,3 +622,38 @@ padding:0px}
    
   
   }
+
+  @media (max-width: 380px) {
+
+.tittle{
+text-align: center;
+
+  }
+
+nav{flex-direction: column;
+ text-align:center;
+justify-content:center;
+height: 20vh}
+
+h1{
+  margin-right:10px
+}
+
+.carousel
+{height:1500px;
+background-image:(url('./image/BG__bottom.jpg'));
+background-repeat: no-repeat;
+background-size: cover;
+background-position: bottom;}
+
+
+.carousel__nav{
+margin-bottom: 1430px}
+
+.profilImage{margin-top: 60px;
+
+  width: 800px
+  
+}
+
+  }
