@@ -390,7 +390,7 @@ background-image: url("./image/BG_Right.jpg");
 /* responsive */
 
 
-@media (max-width: 1300px) {
+@media (min-width: 750px) and (max-width: 1300px ) {
 
 .fleche_gauche_second, .fleche_droite_second, .fleche_gauche_thirdly, .first__right__box{
   visibility: hidden;
@@ -485,7 +485,93 @@ padding:0px}
 
 
 @media (max-width: 750px) {
+  .fleche_gauche_second, .fleche_droite_second, .fleche_gauche_thirdly, .first__right__box{
+    visibility: hidden;
+    width:0px
+  }
+  
+  
+  .div__gauche, .div__droite
+  {width: 50%;
+    margin:15px; 
+    background-repeat: no-repeat;
+    background-position:left;
+    background-size:cover;
+    background-image: url("./image/bgCase_Left.jpg");
+    padding:30px
+  }
+  
+  .all_box_right2, .all_box_left2{
+    width:100%;
+    display:flex;
+    justify-content:center;
+  
+    
+  }
+  
+  body{
+    height:100%;
+    background-color:black;
+     overflow: scroll;
+  }
+  
+  
+  
+  main{
+    height:100%;}
+  
+  
+  
+  .carousel{
+    height:1200px;
+  
+  }
+  
+  .second_caroussel{
+    height:100%;
+    display:flex;
+    justify-content:center;
+    flex-direction :column;
+    flex-wrap: nowrap;
+    background-image: url("./image/BG_Left.jpg");
+    background-repeat: no-repeat;
+    background-position:left;
+    background-size:cover;
+  }
+  
+  
+  .carousel__item{
+    height:100%;
+    width:100%;
+    background-color: black
+    
+  }
+  
+  .thirdly_caroussel{
+    height:100%;
+    display:flex;
+    justify-content:center;
+    background-image: url("./image/BG_Left.jpg");
+    background-repeat: no-repeat;
+    background-position:left;
+    background-size:cover;
+  }
+  
+  .first__left__box{width: 100%;
+  height:100%;
+  padding:0px}
    
+  
+  
+   .first_caroussel{
+     height:100%
+   }
+  
+  
+  
+   .first__right__box{
+     height:0px
+   }
 
   .div__droite__thirdly__box, .div__droite{
     height:50%;
@@ -504,6 +590,7 @@ padding:0px}
 
   }
   
+  body{height:30px}
 
 
   .all_box_right2, .all_box_left2{
@@ -515,9 +602,15 @@ padding:0px}
   }
   
   main{
-    height:100%;
+  height:50px;
     animation: none
   }
+
+  .first_caroussel{
+    height:50px
+  }
+
+  .caroussel{height:50px}
   
  
   
@@ -526,9 +619,6 @@ padding:0px}
  }
    
   
-   .profilImage{
-  width:800px
-   }
-  
+   
   
   }
