@@ -12,6 +12,7 @@ nav
     height: 10vh;
     display: flex;
     justify-content: space-between;
+  align-content: center;
     flex-wrap: wrap;
     animation-name: backgroundTransition;
     animation-duration: 3s;
@@ -31,8 +32,9 @@ h1
 cursor: pointer;
 color: greenyellow;
 padding-left: 15px;
-font-size: 3em;
-margin-left: 15px
+font-size: 3rem;
+margin-left: 15px;
+font-family:'Domine', serif;
     }
 
   h1:hover{
@@ -151,10 +153,24 @@ to{transform: translateX(0px);
   }
 
   h3{color: greenyellow;
-font-family : sans-serif}
+    font-family: 'Domine', serif;
+
+    }
+
+  .tittle{font-family: 'Press Start 2P', cursive;
+
+    }
 
 
   /* première box de gauche */
+
+
+  .first_caroussel
+{display:flex;
+height: 100%;
+width: 100%;
+justify-content: space-between;}
+
 
 .first__left__box{
     display: flex;
@@ -162,7 +178,7 @@ align-items:center;
 flex-direction: column;
     width: 50%;
     height: 100vh;
-    font-size : 1.5em
+    font-size : 1.5rem
 }
 
 
@@ -218,6 +234,7 @@ flex-direction: column;
 
  .second_caroussel
  {display:flex;
+  flex-wrap: wrap;
  height: 80vh;
  width: 100%;
  border-bottom: 2px silver solid}
@@ -273,7 +290,7 @@ height:100%;
 }
 
 .firstBox_Left_element3 img
-{width: 50px;}
+{width: 10%;}
 
 
 /* second box right */
@@ -296,70 +313,24 @@ width: 50%;}
 .div__gauche, .div__droite
 {display: flex;
   justify-content: center;
+  height: 50vh;
   border: 2px silver solid;
   border-radius: 30px;
   align-items: center;
   flex-direction : column;
   text-align:center;
-  font-size: 1.6em;
-  height: 50vh;
+  font-size: 1em;
   width:50%;
   background-repeat: no-repeat;
-  background-size: cover;}
+  background-size: cover;
+  text-overflow: ellipsis;
+padding:100px }
 
 /* ------------------------------------ */
       
 
-     
-#borderDecorationR
-{width : 48%;
-height:70%;
-margin-left : 25px;
-font-size: 2em;
-margin-top: 20px};
-
-#borderDecorationL
-{    width : 48%;
-    height:70%;
-    margin-right : 25px;
-    font-size: 2em;;
-margin-top: 20px}
-
-#next_right{
-    margin-right: 50px;
-    animation-name : next_effect;
-    animation-duration: 2s;
-    transform: scale(0.7);
-    animation-iteration-count: infinite;
-    cursor:pointer
-}
 
 
-.item__next{display:flex;
-align-items: center;
-justify-content: flex-start;
-font-size: 15em;
-width:50%}
-
-
-.first_caroussel
-{display:flex;
-height: 100%;
-width: 100%;
-justify-content: space-between;}
-
-.fleche_droite_first
-{font-size: 15em;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-width: 100%;
-height: 100%;
-background-image: url("./image/BG_Right.jpg");
-background-repeat: no-repeat;
-background-size: cover;
-background-position:center ;
-}
 
 
 
@@ -378,60 +349,186 @@ justify-content:center;
 width:100%;
 align-items: center;
 }
+ 
+.job li{ text-align: start;
+  padding-top: 15px
+}
+
+
+/* code commun */
+
+.fleche_gauche_second, .fleche_droite_second, .fleche_gauche_thirdly, .fleche_droite_first1{
+  font-size: 15em;
+  display: flex;
+  align-items: center;
+  height:100%;
+  width:50%;
+  background-repeat: no-repeat;
+background-size: cover;
+background-position:center;
+
+}
 
 .fleche_droite_first1{
- 
-  font-size: 15em;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
 width: 100%;
-height: 100%;
-background-image: url("./image/BG_Right.jpg");
-background-repeat: no-repeat;
-background-size: cover;
-background-position:center ;
-
 }
 
-.fleche_gauche_second{
 
-  font-size: 15em;
-  display: flex;
-  height:100%;
+.fleche_gauche_second, .fleche_gauche_thirdly{
   justify-content: flex-start;
-  align-items: center;
 background-image: url("./image/BG_Left.jpg");
-background-repeat: no-repeat;
-background-size: cover;
-background-position:center;
-width:50%
+
+
 }
 
-.fleche_droite_second{
-  font-size: 15em;
-  display: flex;
+.fleche_droite_second, .fleche_droite_first1{
   justify-content: flex-end;
-  align-items: center;
 background-image: url("./image/BG_Right.jpg");
-background-repeat: no-repeat;
-background-size: cover;
-background-position:center;
-width:50%;
-height:100%;
 }
 
-.fleche_gauche_thirdly{
 
-  font-size: 15em;
-  display: flex;
+/* responsive */
+
+
+@media (max-width: 1300px) {
+
+.fleche_gauche_second, .fleche_droite_second, .fleche_gauche_thirdly, .first__right__box{
+  visibility: hidden;
+  width:0px
+}
+
+
+.div__gauche, .div__droite
+{width: 50%;
+  margin:15px; 
+  background-repeat: no-repeat;
+  background-position:left;
+  background-size:cover;
+  background-image: url("./image/bgCase_Left.jpg");
+  padding:30px
+}
+
+.all_box_right2, .all_box_left2{
+  width:100%;
+  display:flex;
+  justify-content:center;
+
+  
+}
+
+body{
   height:100%;
-  justify-content: flex-start;
-  align-items: center;
-background-image: url("./image/BG_Left.jpg");
-background-repeat: no-repeat;
-background-size: cover;
-background-position:center;
-width:50%
+  background-color:black;
+   overflow: scroll;
 }
 
+
+
+main{
+  height:100%;}
+
+
+
+.carousel{
+  height:1200px;
+
+}
+
+.second_caroussel{
+  height:100%;
+  display:flex;
+  justify-content:center;
+  flex-direction :column;
+  flex-wrap: nowrap;
+  background-image: url("./image/BG_Left.jpg");
+  background-repeat: no-repeat;
+  background-position:left;
+  background-size:cover;
+}
+
+
+.carousel__item{
+  height:100%;
+  width:100%;
+  background-color: black
+  
+}
+
+.thirdly_caroussel{
+  height:100%;
+  display:flex;
+  justify-content:center;
+  background-image: url("./image/BG_Left.jpg");
+  background-repeat: no-repeat;
+  background-position:left;
+  background-size:cover;
+}
+
+.first__left__box{width: 100%;
+height:100%;
+padding:0px}
+ 
+
+
+ .first_caroussel{
+   height:100%
+ }
+
+
+
+ .first__right__box{
+   height:0px
+ }
+
+
+}
+
+
+@media (max-width: 750px) {
+   
+
+  .div__droite__thirdly__box, .div__droite{
+    height:50%;
+  }
+
+  .div__droite__thirdly__box{
+    display: flex;
+    align-content: center;
+  }
+
+  .div__gauche, .div__droite
+  {width: 80%;
+    height:80%;
+    margin:0px;
+    padding:10px
+
+  }
+  
+
+
+  .all_box_right2, .all_box_left2{
+    height:80%;
+    width:100%;
+    display:flex;
+    justify-content:center;
+    margin:0px;
+  }
+  
+  main{
+    height:100%;
+    animation: none
+  }
+  
+ 
+  
+  .first__left__box{
+    margin-top:50px;
+ }
+   
+  
+   .profilImage{
+  width:800px
+   }
+  
+  
+  }
