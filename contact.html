@@ -1,50 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="./styles.contact.css">
-    <title>Maxime Bordet / contact</title>
+    <meta charset="utf-8">
+    <title>Contactez-nous/title>
 </head>
+
 <body>
-    
-    <main>
-    <form action="./contact.php" method="post">
-        <div class="formulaire">
-        <div class="div__left">
-        <div class="item">
-            <label for="name">Nom :</label>
-            <input type="text" id="name" name="user_first_name">
-        </div>
-        <div class="item">
-            <label for="prenom">Prénom :</label>
-            <input type="text" id="prenom" name="user_second_name">
-        </div>
-        <div class="item">
-            <label for="mail">e-mail&nbsp;:</label>
-            <input type="email" id="mail" name="user_mail">
-        </div>
-        <div class="item">
-            <label for="tel">Téléphone :</label>s
-            <input type="tel" id="tel" name="user_tem">
-        </div>
-    </div class="item">
-    <div class="div__right">
-        <div class="item">
-            <label for="msg">Message :</label>
-            <textarea class="textarea" id="msg" name="user_message"></textarea>
-                      
-        </div>
-           
-        </div>
+    <form method="post" action="mail.php">
+        <label>Tape ton message ici pour m'écrire</label>
+        <textarea rows="10" cols="30" name="message"></textarea>
         <input type="submit">
-        <div>
-
-        </div>
-       
     </form>
-</main>
 </body>
-</html>  
-
+</html>
