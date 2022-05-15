@@ -1,0 +1,50 @@
+body{
+
+background-color: black;
+color: grey
+}
+
+main{height: 100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+form{
+
+    width:50%;
+    height: 50%
+}
+
+.formulaire{
+    display:flex;
+    widht: 100%;
+    height:50vh;
+    border: 2px greenyellow solid;
+    padding: 50px;
+    border-radius: 30px
+}
+
+.div__left{
+    display:flex;
+    flex-direction: column;
+    height: 100%;
+    width: 50%;
+    font-size: 2em;
+}
+
+.div__right{
+    display:flex;
+    flex-direction: column;
+    height: 100%;
+    width: 50%;
+    font-size: 2em;
+}
+
+.item
+{display: flex;
+flex-direction: column;}
+
+.textarea{
+    height: 30vh
+}
