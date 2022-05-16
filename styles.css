@@ -652,7 +652,10 @@ height:auto
 }
 
 .carousel
-{height:100vh}
+{height:90vh}
 
+.second_caroussel{
+  height:90%;
+  font-size: 0.7em
 
   }
