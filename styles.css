@@ -390,34 +390,62 @@ background-image: url("./image/BG_Right.jpg");
 /* responsive */
 
 
-@media (min-width: 750px) and (max-width: 1300px ) {
+@media (min-width: 1001px) and (max-width: 1365px ) {
 
-.fleche_gauche_second, .fleche_droite_second, .fleche_gauche_thirdly, .first__right__box{
-  visibility: hidden;
-  width:0px
-}
-
-
+  .fleche_gauche_second, .fleche_droite_second, .fleche_gauche_thirdly{width: 50%
+  }
 .div__gauche, .div__droite
-{width: 50%;
-  margin:15px; 
+{width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height:50%; 
+  width: 50%;
   background-repeat: no-repeat;
   background-position:left;
   background-size:cover;
   background-image: url("./image/bgCase_Left.jpg");
-  padding:30px
+  padding:0px;
+  margin:15px;
+  font-size:0.8rem
+
 }
 
+.div__gauche, .div__droite h3{font-size:0.7em
+
+}
+
+
+
+.first{
+  padding-top:5px
+}
+.firstBox_Left_element3
+{margin-top:50px}
+
 .all_box_right2, .all_box_left2{
-  width:100%;
+  width:50%;
+  height:100%;
   display:flex;
   justify-content:center;
 
   
 }
 
+.div__droite
+{justify-content: flex-start;}
+
+.first{display:flex;
+width:100%;
+height:50%}
+
+.firstBox____element{
+  visibility: hidden;
+  height:0px
+}
+
 body{
-  height:100%;
+  height:100vh;
   background-color:black;
    overflow: scroll;
 }
@@ -425,25 +453,20 @@ body{
 
 
 main{
-  height:100%;}
+  height:100vh;}
 
 
 
 .carousel{
-  height:1200px;
+  height:80vh;
 
 }
 
 .second_caroussel{
-  height:100%;
+  height:80vh;
+  justify-content: center;
   display:flex;
-  justify-content:center;
-  flex-direction :column;
   flex-wrap: nowrap;
-  background-image: url("./image/BG_Left.jpg");
-  background-repeat: no-repeat;
-  background-position:left;
-  background-size:cover;
 }
 
 
@@ -458,15 +481,15 @@ main{
   height:100%;
   display:flex;
   justify-content:center;
-  background-image: url("./image/BG_Left.jpg");
-  background-repeat: no-repeat;
-  background-position:left;
-  background-size:cover;
 }
 
-.first__left__box{width: 100%;
-height:100%;
+.first__left__box{width: 50%;
+height:150%;
 padding:0px}
+
+.profilImage{
+  width:130%
+}
  
 
 
@@ -477,34 +500,50 @@ padding:0px}
 
 
  .first__right__box{
-   height:0px
+  width:50%
  }
-
 
 }
 
 
-@media (max-width: 750px) {
+@media (max-width: 1001px) {
   .fleche_gauche_second, .fleche_droite_second, .fleche_gauche_thirdly, .first__right__box{
     visibility: hidden;
-    width:0px
+    width:0px;
+    height: 0px;
   }
+
+  .first{display:flex;
+    justify-content: center;
+    width:100%;
+    height:50%}
+    
+    .firstBox____element{
+      visibility: hidden;
+      height:0px
+    }
+    .div__droite
+{justify-content: flex-start;
+  font-size:0.8em;}
   
   
   .div__gauche, .div__droite
   {width: 50%;
     margin:15px; 
+
     background-repeat: no-repeat;
     background-position:left;
     background-size:cover;
     background-image: url("./image/bgCase_Left.jpg");
-    padding:30px
+    padding:30px;
   }
   
   .all_box_right2, .all_box_left2{
     width:100%;
+    height:50%;
     display:flex;
     justify-content:center;
+    height:50%
   
     
   }
@@ -512,25 +551,27 @@ padding:0px}
   body{
     height:100%;
     background-color:black;
-     overflow: scroll;
   }
   
   
   
   main{
     height:100%;}
+
+    h3{
+      font-size: 1em;
+    }
   
   
   
   .carousel{
-    height:1200px;
+    height:90vh;
   
   }
   
   .second_caroussel{
     height:100%;
     display:flex;
-    justify-content:center;
     flex-direction :column;
     flex-wrap: nowrap;
     background-image: url("./image/BG_Left.jpg");
@@ -551,15 +592,14 @@ padding:0px}
     height:100%;
     display:flex;
     justify-content:center;
+    flex-direction: column;
     background-image: url("./image/BG_Left.jpg");
     background-repeat: no-repeat;
     background-position:left;
     background-size:cover;
   }
   
-  .first__left__box{width: 100%;
-  height:100%;
-  padding:0px}
+  .first__left__box{width: 100%;}
    
   
   
@@ -585,16 +625,20 @@ padding:0px}
   .div__gauche, .div__droite
   {width: 80%;
     height:80%;
-    margin:0px;
-    padding:10px
 
+  }
+
+  .div__gauche{
+    font-size:0.6em;
+    padding-top:2px;
+    padding-bottom: 5px
   }
   
   body{height:30px}
 
 
   .all_box_right2, .all_box_left2{
-    height:80%;
+    height:40%;
     width:100%;
     display:flex;
     justify-content:center;
@@ -614,10 +658,7 @@ padding:0px}
   
  
   
-  .first__left__box{
-    margin-top:50px;
- }
-   
+  
   
    
   
@@ -627,13 +668,15 @@ padding:0px}
 
 .tittle{
 text-align: center;
-
   }
+
+ body{width:100%}
 
 nav{flex-direction: column;
  text-align:center;
 justify-content:center;
-height: 20vh}
+height: 20vh;
+width:100%}
 
 h1{
   margin-right:10px
@@ -648,12 +691,12 @@ background-position: bottom;}
 
 
 .carousel__nav{
-margin-bottom: 1430px}
+margin-bottom: 1200px}
 
-.profilImage{margin-top: 60px;
-
+.profilImage{
   width: 800px
   
 }
+
 
   }
