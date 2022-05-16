@@ -655,9 +655,7 @@ height: 10vh;}
 
 
 
-.div__droite__thirdly__box{
-height:auto
-}
+
 
 .div__droite{
   font-size: 1.2em
@@ -674,13 +672,21 @@ height:auto
   font-size: 0.7em
 
   }
+  .div__droite__thirdly__box{
+    height:auto
+    }
+
 
   #iconsNav{font-size:1.3em}
 
 h1{font-size:1.3em}
 
-}
+
 h3{text-align: center;}
+
+.job{visibility: hidden;}
+
+  }
   
 
   @media (max-width: 352px) {
