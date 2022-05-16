@@ -601,7 +601,9 @@ height:110%;
   
   .first__left__box{width: 100%;}
    
-  
+  nav{display: flex;
+  flex-wrap: wrap;
+height: 10vh;}
   
    .first_caroussel{
      height:100%
