@@ -658,7 +658,7 @@ height:auto
 }
 
 .div__droite{
-  font-size: 0.7em
+  font-size: 0.8em
 }
 
 .carousel
@@ -667,5 +667,21 @@ height:auto
 .second_caroussel{
   height:90%;
   font-size: 0.7em
+
+  } }
+  
+
+  @media (max-width: 352px) {
+
+    nav{font-size :0.5em}
+    h3{font-size: 0.5em;}
+
+  }
+  
+  @media (max-height: 768px) {
+    
+    .secondbox__Left__element2{
+      font-size:0.8em
+    }
 
   }
