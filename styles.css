@@ -657,6 +657,10 @@ height: 10vh;}
 height:auto
 }
 
+.div__droite{
+  font-size: 0.7em
+}
+
 .carousel
 {height:90vh}
 
