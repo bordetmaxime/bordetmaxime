@@ -638,6 +638,10 @@ height:110%;
   .div__droite{
     padding-bottom: 10px
   }
+
+  .div__droite__thirdly__box{
+    height:auto
+    }
   }
   
 
