@@ -1,0 +1,55 @@
+body
+
+{background-image: url('Hiver.jpg');
+margin: 0 auto;
+background-size: cover;}
+
+/* Navigation */
+nav
+{position: fixed;
+    width:100%;
+    display : flex;
+align-items: flex-end;
+flex-wrap: wrap;
+padding-top: 0px;
+margin-top: 0px;
+border-bottom: 1px black solid;
+background-color: #D3D3D3;
+width: cover;
+}
+
+/* Navigation onglet */
+
+nav .onglet
+
+ { display: flex;
+    align-items: flex-end;
+margin: auto;
+font-size: 20px;
+}
+ 
+
+nav .onglet a  
+
+{  text-decoration: none ;
+font-family: "Architects";
+color: white;
+text-decoration: none;
+  border-radius: 150px;
+  padding : 5px;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin : 10px;
+  border : 1px black solid;
+  background-color: grey
+}
+
+.itineraire
+
+{padding-top: 200px;
+align-items: center;
+width: 910px;
+    height: 600px;
+    border: 0;
+    margin: auto;
+    display: block;}

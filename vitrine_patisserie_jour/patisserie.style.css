@@ -1,0 +1,424 @@
+@import url('https://fonts.googleapis.com/css2?family=Birthstone&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Lobster&display=swap');
+
+body{margin: 0;
+    padding: 0;
+background-color: beige;}
+
+
+header
+
+{display:flex;
+flex-direction: column;
+background: url("./IMG_2334.JPG");
+background-repeat : no-repeat;
+background-size: cover;
+background-position: left;
+padding: 10px;
+border-bottom: 2px black solid;
+box-shadow: 0 0 0.5em black, 0 0 5em black, 0 0 0.5em black;
+margin-bottom: 50px}
+
+header h1
+
+{font-family: "Birthstone";
+    font-size:95px;
+margin-top: 14px ;
+color:rgba(187, 159, 3, 0.562);
+text-shadow: 0 0 0.1em black, 0 0 1em black, 0 0 0.5em black;
+}
+
+header h4
+
+{ color:grey;
+margin-top: -90px;
+margin-left: 200px;
+text-shadow: 0 0 0.1em black, 0 0 1em black, 0 0 0.5em black;
+}
+
+
+
+.logoPageAccueil
+{height:20%;
+width:100%;
+display:flex;
+justify-content: center;
+background-color: beige;
+}
+
+
+
+
+.container{
+    display:flex;
+    flex-direction:column;
+    width:100%;
+
+}
+
+nav{height:50%;
+    width:100%;
+    padding-bottom: 30px;
+    background-color: beige;
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+
+}
+
+
+nav ul{display: flex;
+    justify-content: center;
+    list-style: none;
+    padding:0px;
+width: 100%;
+font-size: 1.8em;
+}
+
+nav li{padding:5px 10px 5px 10px;
+    font-family: "Birthstone";
+    font-size: 1.8em;
+color: black;
+text-shadow: 0 0 0.1em  rgba(187, 159, 3, 0.562), 0 0 1em  rgba(187, 159, 3, 0.562), 0 0 0.5em  rgba(187, 159, 3, 0.562);
+cursor:pointer;
+font-weight: bold;}
+
+nav li:hover{
+    
+    text-shadow: 0px 0px 1px black, 0 0 1em black, 0 0 0.1em black;
+    color:white
+
+}
+
+
+.iconeReseau{width:100%;
+display:flex;
+padding-top:15px;
+padding-bottom : 10px;
+justify-content: center;
+border-top:2px solid black;
+border-bottom:2px solid black;
+box-shadow: 0 0 0.1em black, 0 0 1em black, 0 0 0.5em black; }
+
+
+.iconeReseau a {width:5%;
+    margin-right:10px;}
+
+.iconeReseau a img{
+    margin-right:10px;
+    width:100%;
+    cursor:pointer
+}
+
+.iconeReseau a img:hover{
+    transform: scale(1.1);
+
+} 
+ 
+main{
+    width: 100%;
+    background-color: beige;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    padding-top: 20px
+}
+
+.carousel{
+width:100%;
+display:flex;
+justify-content:center;
+background-image: url("./star-dark-space-galaxy-wallpaper-preview.jpg");
+background-repeat: no no-repeat;
+background-position: center;
+padding-top: 50px;
+padding-bottom: 50px;
+border-top:5px black solid;
+border-bottom:5px black solid;
+box-shadow: 0 0 0.5em black, 0 0 5em black, 0 0 0.5em black;
+}
+
+.images
+
+ {width:100%;
+    display : flex;
+  animation-duration: 40s;
+  animation-name: mesimages ;
+  animation-iteration-count: infinite;
+  
+  }
+
+#defil
+
+{display:flex;
+     justify-content:center;
+     width: 85%;
+height: 431px;
+overflow: hidden;
+border:4px black solid;
+}
+
+
+@keyframes mesimages {
+
+0% {transform: translateX(0);}
+20% {transform: translateX(-330px);}
+30%{transform: translateX(-660px);}
+40%{transform: translateX(-990px);}
+50%{transform: translateX(-1350px);}
+60%{transform: translateX(-1350px);}
+70%{transform: translateX(-990px);}
+80%{transform: translateX(-660px);}
+90%{transform: translateX(-330px);}
+100%{transform:translateX(0);}
+}
+
+
+.firtArticle{
+    display:flex;
+    justify-content:center;
+    width:90%;
+    height:100%;
+    margin:100px;
+    border-radius:30px;
+    border: 2px solid black;
+    padding: 30px;
+    box-shadow: 0 0 0.5em black, 0 0 5em black, 0 0 0.5em black;
+}
+
+
+
+.firstBox
+{width:50%;}
+
+
+
+.secondbox
+{width:50%;
+background-color: antiquewhite;
+text-align:center;
+border-radius:30px;
+box-shadow: 0 0 0.1em black, 0 0 1em black, 0 0 0.5em black;}
+
+.thirdlyBox{
+    width:50%;
+}
+
+
+.divPicture1{display: flex;
+    justify-content: center;
+    width: 100%;
+height:200px;
+border-radius: 50%;}
+
+.divPicture2{display:flex;
+    justify-content :end;
+    width: 100%;
+    height:200px;
+    border-radius: 50%;}
+
+    .divPicture3{display: flex;
+        justify-content: center;
+        width: 100%;
+        height:200px;
+        border-radius: 50%;}
+
+        .picture1, .picture2, .picture3, .picture4, .picture5, .picture6{
+            border: 1px black solid;
+            box-shadow: 0 0 0.1em black, 0 0 1em black, 0 0 0.5em black;
+            cursor: pointer;
+        }
+
+
+.picture1{
+
+    display: flex;
+    justify-content: center;
+    width:280px;
+    height:280px;
+    border-radius:50%;
+    background-image: url("./IMG_3269.JPG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+
+
+
+
+.picture2{
+    height :200px;
+    width:200px;
+    border-radius:50%;
+    background-image: url("./pexels-photo-6958009.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+
+.picture3{
+    height :250px;
+    width:250px;
+    border-radius:50%;
+    background-image: url("./IMG_3335.JPG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+
+
+
+.divPicture4{width: 100%;
+    display: flex;
+    justify-content: center;
+    height:200px;
+    border-radius: 50%;}
+    
+    .divPicture5{width: 100%;
+        display: flex;
+        justify-content: start;
+        height:200px;
+        border-radius: 50%;}
+    
+        .divPicture6{width: 200px;
+            width: 100%;
+            display: flex;
+          justify-content: center;
+            height:200px;
+            border-radius: 50%;}
+    
+    
+    
+    
+    .picture4{
+        border: 1px black solid;
+        width:280px;
+        height:280px;
+        border-radius:50%;
+        background-image: url("./r.JPG");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        
+    }
+
+    .picture4:hover{
+        background-image: url("./r.zoom.JPG");
+        transition-duration: 2s;
+    }
+
+
+
+
+    
+    
+    
+    .picture5{
+         
+        width:200px;
+        height:200px;
+        border-radius:50%;
+        background-image: url("./s.JPG");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        
+        
+    }
+    
+    .picture5:hover, .picture6:hover{
+      background-size: 180%;
+      transition-duration: 2s;
+      
+
+    }
+    
+    .picture6{
+        height :250px;
+        width:250px;
+        border-radius:50%;
+        background-image: url("./t.JPG");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        
+    }
+
+
+    .autreBox{
+        display:flex;
+        justify-content:center;
+        width:90%;
+        height:100%;
+        margin-top: 50px 100px 50px 100px;
+        border-radius:30px;
+        border: 2px solid black;
+        padding: 30px;
+        box-shadow: 0 0 0.5em black, 0 0 5em black, 0 0 0.5em black;
+
+    }
+    section{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    width:100%;
+height: 100%}
+
+
+.troisiemeBox{display:flex;
+    justify-content: center;
+    height:100%;
+    align-content: center;
+    width:100%;
+padding:10px}
+
+.troisiemeBox img{width: 100%;
+    height: 50%;
+border-radius:30px;
+border: 1px solid grey;}
+
+.concours{margin:30px;
+    height:100%;
+    width:50%;
+}
+
+
+
+.quatriemeRight{
+    width:50%;
+
+}
+
+.quatriemeLeft{
+    width:50%;
+    
+
+}
+.quatriemebox{
+    display:flex;
+        justify-content:center;
+        width:90%;
+        height:100%;
+        margin: 100px;
+        border-radius:30px;
+        border: 2px solid black;
+        padding: 30px;
+        box-shadow: 0 0 0.5em black, 0 0 5em black, 0 0 0.5em black;
+}
+
+.quatriemeRight img{width : 50%} 
+
+.deuxiemeBoxGauche{width:50%;
+ 
+height:100%}
+
+.deuxiemeBoxGauche img{height: 80%}
