@@ -234,7 +234,7 @@ border-radius: 50%;}
         .picture1, .picture2, .picture3, .picture4, .picture5, .picture6{
             border: 1px black solid;
             box-shadow: 0 0 0.1em black, 0 0 1em black, 0 0 0.5em black;
-            cursor: pointer;
+           
         }
 
 
@@ -316,11 +316,7 @@ border-radius: 50%;}
         
     }
 
-    .picture4:hover{
-        background-image: url("./r.zoom.JPG");
-        transition-duration: 2s;
-    }
-
+    
 
 
 
@@ -340,7 +336,7 @@ border-radius: 50%;}
         
     }
     
-    .picture5:hover, .picture6:hover{
+    .picture1:hover, .picture2:hover, .picture3:hover, .picture4:hover, .picture5:hover, .picture6:hover{
       background-size: 180%;
       transition-duration: 2s;
       
