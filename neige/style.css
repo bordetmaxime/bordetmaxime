@@ -34,6 +34,7 @@ nav .onglet
     margin : auto;
     align-items: center;
 font-size: 20px;
+width:80%
 }
 
 
@@ -154,7 +155,6 @@ cursor: pointer;
 .main 
 
 {color: black;
-    margin : 20px;
     display : flex ;
     flex-direction: column;
     justify-content: center;
@@ -179,6 +179,7 @@ cursor: pointer;
 
 {
     display: flex;
+    justify-content: space-around;
     flex-wrap:wrap;
 }
 
@@ -284,3 +285,17 @@ cursor: pointer;
 {transform:scale(1.05)}
 
 
+@media (max-width: 1250px) {
+
+    .carte1, .carte2, .carte3, .carte4, .carte5, .carte6, .carte7, .carte8,{width:80%}
+
+    .cards .card img{width:100% }
+
+ }
+
+ @media (max-width: 456px) {
+.onglet a {font-size:0.8em}
+nav .onglet{
+margin:0}
+.nav a{font-size:0.7em}
+ }

@@ -651,7 +651,7 @@ height: 10vh;}
 
 
 
-  @media (max-width: 380px) {
+  @media (max-width: 470px) {
 
 
 
@@ -682,7 +682,10 @@ height: 10vh;}
 h1{font-size:1.3em}
 
 
-h3{text-align: center;}
+h3{text-align: center;
+
+  font-size:1em
+}
 
 .job{visibility: hidden;}
 
