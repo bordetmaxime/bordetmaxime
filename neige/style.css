@@ -234,11 +234,10 @@ p
 
 /* ---------------------------------------------------------   rendre dynamique le passage de la souris sur les cartes----------------------------------- */
 .cards .card:hover 
-{transform: scale(1.08);
-background-color: white;
-color:black;
+{color:black;
 font-weight: bold;
 border : black 2px solid;
+box-shadow: 0 0 0.1em black, 0 0 1em black, 0 0 0.5em black;
 }
 
 /* ---------------------------------------------------------   ensemble des boutons "ajouter au panier" des cartes--------------------------------------- */
