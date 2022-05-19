@@ -655,7 +655,9 @@ height: 10vh;}
 
 
 
-
+    .carousel__nav{
+      margin-bottom: 30px;
+    }
 
 .div__droite{
   font-size: 1.2em
