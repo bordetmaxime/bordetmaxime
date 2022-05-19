@@ -1,14 +1,18 @@
 
 
-var jeux = alert("Regle du jeux : Tu dois créer 60bulle en moins de 10secondes en appuyant sur le boutton click!" );
+var jeux = alert("Règle du jeux : Les aleinnes attaque la terre, appui sur le boutton click et envoie 60missile en moins de 10secondes pour les battres" );
 
 
 
 let temps = 10
 
+
+function confirmer()
+{confirm('perdu retente ta chance')}
+
 const timerElement = document.getElementById("timer")
 
-setInterval(() => {
+let timer = setInterval(() => {
  
   let secondes = parseInt(temps % 60, 10)
 
@@ -17,21 +21,27 @@ setInterval(() => {
 
   timerElement.innerText = `${secondes}`
   temps = temps <= 0 ? 0 : temps - 1 ;
- if (secondes <= 0){alert("perdu! Retente ta chance!")
-  if (true){window.location.reload()}};
 
-  console.log(temps)
+  
+
+ if (secondes <= 0){confirmer()
+if( confirmer = true){window.location.reload()}
+}
+
+
 
 }, 1000 )
 
 
+
 var boutton = document.querySelector(".boutton");
+console.log(boutton)
 
  var nbDeBulle = 0; 
  var resultat = document.querySelector(".resultat");
 
 
-function creationDeBulle(nbDeBulle){
+function creationDeBulle(){
 
     divGeneral = document.querySelector(".divGeneral");
     var divCreation = document.createElement("div");
@@ -40,17 +50,10 @@ function creationDeBulle(nbDeBulle){
    nbDeBulle++
 
     resultat.innerHTML = nbDeBulle;
-
-    return nbDeBulle
+    if (nbDeBulle == 60 ){alert("bravo tu as sauvé la planète terre!"), clearInterval(timer), window.location.reload() };
+   
    
 
     }
 
-    let nombre = creationDeBulle()
-
-    if (nombre == 60 ){alert("votre temps à gauche!")};
-
     boutton.addEventListener("click", creationDeBulle)
-
-
-

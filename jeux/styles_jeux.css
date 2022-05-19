@@ -2,7 +2,13 @@
 
 body
 
-{background-color: lightgrey;}
+
+{
+    background-image:url('./planette.jpg');
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position:center;
+    height:100vh}
 
 .bouttonAuCentre
 {width: 100%;
@@ -14,9 +20,14 @@ align-items: center;
 
 }
 
+.divGeneral{
+    height:100%;
+background-color: transparent;
+}
+
 .boutton
-{border: 1px solid rgb(146, 146, 146) ;
-background-color: rgb(168, 168, 168);
+{border: 3px solid rgb(146, 146, 146) ;
+background-color: black;
 width: 300px;
 height: 100px;
 border-radius: 30px;
@@ -24,7 +35,7 @@ font-size: 1.8em;
 font-family: sans-serif;
 cursor: pointer;
 font-weight: bold;
-color: rgba(255, 255, 255, 0.568);
+color: white;
 
 outline: none}
 
@@ -37,10 +48,12 @@ outline: none}
 flex-wrap: wrap;}
 
 .divCreation {margin : 15px;
-    background-color: rgba(0, 0, 255, 0.431);
+background-image:url('./png-clipart-spacecraft-cartoon-drawing-rocket-comics-orange.png');
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
 width:200px;
-height : 200px;
-border-radius: 50%;}
+height : 200px;}
 
 .nbClick, #timer
 
@@ -49,7 +62,8 @@ border-radius: 50%;}
     align-items: center;
     width : 400px;
 height: 100%;
-border : 2px solid rgba(0, 0, 255, 0.431);
+border : 2px solid white;
+color:white;
 padding: 10px;
 font-weight: bold;
 font-family: sans-serif;
@@ -74,7 +88,7 @@ font-size: 4em;
 color:red;}
 
 
-h1{color: rgba(0, 0, 255, 0.431);
+h1{color: white;
     text-decoration: underline
    
 }
