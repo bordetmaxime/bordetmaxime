@@ -215,7 +215,7 @@ justify-content: flex-end;}
 }
 .divPicture1{display: flex;
     justify-content: start;
-    width:180px;
+    width:30%;
     height:180px;;
 border-radius: 50%;}
 
@@ -518,4 +518,80 @@ align-content:center}
   font-size:1.2em;
   margin:0px;
   padding:0px
+}
+
+@media screen and (max-width: 1320px)
+{
+    .firtArticle, .autreBox, .quatriemebox{
+        flex-direction: column;
+        justify-content: space-between;
+        align-items:center;
+    }
+
+    .troisiemeBox
+    {width:80%}
+
+    .concours{
+        font-size:0.8em
+    }
+
+    .divPicture1, .divPicture2, .divPicture3, .divPicture4, .divPicture5, .divPicture6, .picture1, .picture2, .picture3, .picture4, .picture5, .picture6  {
+      visibility: hidden;
+      height: 0px;
+      width: 0px;
+    }
+
+    .secondbox{
+        width: 80%
+    }
+
+    .quatriemeRight{
+        width:80%
+    }
+
+    .defil{height:200px}
+
+    .quatriemeRight a img{ width:80%}
+
+    .deuxiemeBoxGauche{width:70%}
+}
+
+@media screen and (max-width: 842px)
+
+{
+    .firtArticle, .autreBox, .quatriemebox{
+        width:80%
+    }
+
+    .troisiemeBox { flex-direction: column;}
+
+
+    #defil, .images{height:250px}
+
+    .carousel{
+        height:300px
+    }
+
+    .quatriemeRight a img
+    
+
+}
+
+@media screen and (max-width: 564px)
+{
+    .firtArticle, .autreBox, .quatriemebox{
+        width:75%
+    }
+
+       
+    .concours{
+        padding:20px;
+        width:90%
+    }
+
+    .quatriemeLeft
+    {padding:20px;
+    width:90%}
+
+    
 }
