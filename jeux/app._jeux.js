@@ -1,6 +1,6 @@
 
 
-var jeux = alert("Règle du jeux : Les aleinnes attaque la terre, appui sur le boutton click et envoie 60missile en moins de 10secondes pour les battres" );
+var jeux = alert("Règle du jeux : Les aliennes attaques la terre, appui sur le boutton click et envoie 60missile en moins de 10secondes pour les battres" );
 
 
 
