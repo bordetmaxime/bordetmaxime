@@ -249,7 +249,14 @@ width:50%;}
 {text-decoration: none;
 color: silver;
 font-weight: bold;
-text-align: start;}
+text-align: start;
+margin:0px}
+
+.secondbox__Left__element2{
+  padding:0px
+}
+
+
 
 .secondbox__Left__element2 a:hover
 {  color:white;
@@ -394,7 +401,7 @@ background-image: url("./image/BG_Right.jpg");
 /* responsive */
 
 
-@media (min-width: 1001px) and (max-width: 1365px ) {
+@media (min-width: 1496px) and (max-width: 1365px ) {
 
   .fleche_gauche_second, .fleche_droite_second, .fleche_gauche_thirdly{width: 50%
   }
@@ -507,6 +514,47 @@ padding:0px}
 
 }
 
+@media (max-width: 1496px) {
+  .secondbox__Left__element2{
+    visibility: hidden
+  }
+
+  .div__droite, .div__gauche{
+  flex-direction: row;
+  width:100%;
+  height:80%;
+  padding:0px;
+  align-content:center
+  }
+  .firstBox____element{width:50%;
+  height:80%;
+  display: flex;
+  flex-direction: column;
+justify-content:center;
+}
+
+  .first{height:100%;
+    width:50%;
+  display: flex;
+  flex-direction: column;
+justify-content:center;
+margin-top:-60px;
+margin-left:15px}
+
+.secondbox__Left__element2{
+  width:0px;
+  height:0px
+}
+
+#troisieme__responsive{
+  flex-direction:column;
+  width:80%
+}
+
+
+
+}
+
 
 @media (max-width: 1001px) {
   .fleche_gauche_second, .fleche_droite_second, .fleche_gauche_thirdly, .first__right__box{
@@ -515,50 +563,70 @@ padding:0px}
     height: 0px;
   }
 
-  .first{visibility:hidden;
+
+
+.secondbox__Left__element2{
+  visibility: visible;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width:50%
+} 
+
+.carousel{
+  height: 90vh;
+}
+
+   .first{
     width:0px;
-    height:0px}
+    height:0px;
+  margin:0px} 
     
-    .firstBox____element1{
+     .firstBox____element1{
       visibility: hidden;
+    
+      width:50%
     }
+     
     
-    
-    .div__droite
+     .div__droite
 {justify-content: flex-start;
-  font-size:0.8em;}
+  font-size:0.8em;} 
+
+   .firstBox_Left_element3{
+    width:50%;
+    height:100%;
+    align-content:center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  } 
+
+
   
-  
-  .div__gauche, .div__droite
-  {width: 50%;
+   .div__gauche, .div__droite
+  {width: 100%;
     margin:10px; 
-height:110%;
+height:100%;
     background-repeat: no-repeat;
     background-position:left;
     background-size:cover;
     background-image: url("./image/bgCase_Left.jpg");
-    padding:30px;
-  }
+    padding:0px
+  } 
   
   .all_box_right2, .all_box_left2{
-    width:100%;
-    height:50%;
+    width:50%;
+    height:100%;
     display:flex;
     justify-content:center;
-    height:50%
   
     
-  }
+  } 
   
-  body{
-    height:100vh;
-    background-color:black;
-  }
-  
-  
-  
-  main{
-    height:100%;}
+   
+
 
     h3{
       font-size: 1.5em;
@@ -566,21 +634,15 @@ height:110%;
   
   
   
-  .carousel{
+   .second_caroussel{
     height:80vh;
-  
-  }
-  
-  .second_caroussel{
-    height:100%;
     display:flex;
-    flex-direction :column;
     flex-wrap: nowrap;
     background-image: url("./image/BG_Left.jpg");
     background-repeat: no-repeat;
     background-position:left;
     background-size:cover;
-  }
+  } 
   
   
   .carousel__item{
@@ -588,9 +650,9 @@ height:110%;
     width:100%;
     background-color: black
     
-  }
+  } 
   
-  .thirdly_caroussel{
+   .thirdly_caroussel{
     height:100%;
     display:flex;
     justify-content:center;
@@ -599,79 +661,130 @@ height:110%;
     background-repeat: no-repeat;
     background-position:left;
     background-size:cover;
-  }
+  } 
   
-  .first__left__box{width: 100%;}
+   .first__left__box{width: 100%;} 
    
-  nav{display: flex;
+   nav{display: flex;
   flex-wrap: wrap;
-height: 10vh;}
+height: 10vh;} 
   
    .first_caroussel{
      height:100%
    }
+   
   
   
-  
-   .first__right__box{
+    .first__right__box{
      height:0px
-   }
+   } 
 
-  .div__droite__thirdly__box, .div__droite{
+   .div__droite__thirdly__box, .div__droite{
     height:50%;
-  }
+  } 
 
-  .div__droite__thirdly__box{
+   .div__droite__thirdly__box{
     display: flex;
     align-content: center;
-  }
+  } 
 
-  .div__gauche, .div__droite
-  {width: 80%;
+   .div__gauche, .div__droite
+  {width: 100%;
     height:80%;
-    padding-bottom:15px
 
-  }
+  } 
 
   .div__gauche{
     font-size:0.8em;
-    padding-top:2px;
-    padding-bottom: 15px
-  }
+    align-content:center;
+  } 
 
-  .div__droite{
-    padding-bottom: 10px
-  }
 
   .div__droite__thirdly__box{
     height:auto
+    } 
+
+    .secondbox__Left__element2{
+      width:50%;
+      height:100%;
+      justify-content:center;
+      align-content:center;
+      font-size:1.8em
     }
+
+     .firstBox____element1{
+      width:0px;
+      height:0px;
+    } 
+
+     .firstBox____element{
+      height:80%;
+      font-size:0.8em
+    } 
+
+     #boxres{
+      visibility: hidden;
+      width:0px;
+      height:0px
+    } 
+
+     #competres{
+      width:50%;
+      align-content:center;
+      align-items:center;
+      font-size:1.2em
+    } 
+
+    #troisieme__responsive{
+      flex-direction: row;
+      padding:30px
+    } 
+
+  .div__droite{
+    justify-content: center;
+  }
+
+
   }
   
 
 
 
-  @media (max-width: 470px) {
+  @media (max-width: 708px) {
 
 
+    #troisieme__responsive{
+      flex-direction:column;
+      padding:30px
+    }
 
     .carousel__nav{
       margin-bottom: 50px;
     }
 
 .div__droite{
-  font-size: 1.2em
+  font-size: 0.7em;
+  height:80%
 }
 
 .div__gauche{
-  font-size: 1.2em
+  font-size: 0.8em;
+  height:80%
+}
+
+.all_box_left2,.all_box_right2{
+  height:50%;
+  
+  width:50%
 }
 .carousel
 {height:90vh}
 
 .second_caroussel{
   height:90%;
-  font-size: 0.7em
+  font-size: 0.7em;
+  flex-direction: column;
+  align-items:center
 
   }
   .div__droite__thirdly__box{
@@ -694,7 +807,7 @@ h3{text-align: center;
   }
   
 
-  @media (max-width: 352px) {
+  @media (max-width:543px) {
 
     nav{font-size :0.5em;
     width:100%;
@@ -704,15 +817,26 @@ h3{text-align: center;
     h1{font-size: 2.8em;}
 
     .div__droite{
-      font-size: 1em
+      justify-content: flex-start;
+      height:100%;
+      width:100%;
+      font-size: 0.7em;
+      flex-direction: row;
     }
+
+    .all_box_right2{width:60%}
+
+    .firstBox____element
+    {width:100%}
+
+    #competres{width:100%}
 
   }
   
   @media (max-height: 768px) {
     
     .secondbox__Left__element2{
-      font-size:0.8em
+      font-size:1.2em
     }
 
   }
