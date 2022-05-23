@@ -91,7 +91,7 @@ color: silver}
 { border-top: silver 1px solid;
 background-color:black;
 width: 100%;
-height: 80vh;
+height: 90vh;
 animation-name: animationMain;
 animation-duration: 3s;
 margin:0
@@ -167,7 +167,6 @@ to{transform: translateX(0px);
 
   .first_caroussel
 {display:flex;
-height: 100%;
 width: 100%;
 justify-content: space-between;}
 
@@ -177,7 +176,7 @@ justify-content: space-between;}
 align-items:center;
 flex-direction: column;
     width: 50%;
-    height: 80vh;
+    height: 100vh;
     font-size : 1.5rem
 }
 
@@ -197,7 +196,7 @@ flex-direction: column;
 
 .first__right__box{
   width:50%;
-  height: 80vh;
+  height: 100vh;
 }
 
 
@@ -489,7 +488,7 @@ main{
 }
 
 .first__left__box{width: 50%;
-height:150%;
+height:80vh;
 padding:0px}
 
 .profilImage{
@@ -572,10 +571,6 @@ margin-left:15px}
   justify-content: center;
   width:50%
 } 
-
-.carousel{
-  height: 80vh;
-}
 
    .first{
     width:0px;
@@ -778,7 +773,7 @@ height: 10vh;}
   width:50%
 }
 .carousel
-{height:80vh}
+{height:90vh}
 
 .second_caroussel{
   height:90%;
@@ -824,12 +819,10 @@ h3{text-align: center;
       flex-direction: row;
     }
 
-    .all_box_right2{width:60%}
-
     .firstBox____element
     {width:100%}
 
-    #competres{width:100%}
+    #competres{width:80%}
 
   }
   
