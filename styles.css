@@ -196,7 +196,7 @@ box-shadow: 0 0 0.5em black, 0 0 5em black, 0 0 0.5em black;}
 
     .box1, .box2{width: 80%;
         height:100%;
-        margin: 30px;
+        margin-bottom: 30px;
         border-radius:10px;
         box-shadow: 0 0 0.5em black, 0 0 5em black, 0 0 0.5em black;
         border:2px solid black
