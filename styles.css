@@ -1,718 +1,310 @@
 
-body
+  @import url(https://fonts.googleapis.com/css?family=Raleway:400,,800,900);
 
-{margin: 0px;
-overflow: hidden;}
-
-/* nav barre */
-
-nav
-
-{width: 100%;
-    height: 10vh;
-    display: flex;
-    justify-content: space-between;
-  align-content: center;
-    flex-wrap: wrap;
-    animation-name: backgroundTransition;
-    animation-duration: 3s;
-    margin-top:0px;
-    color: white;
-    background-image: url("./image/38-381427_m.jpg");
-    background-size: cover;
-    background-position: bottom;
-    background-repeat: no-repeat;
-    }
-
-/* nav barre titre de gauche */
-
-h1
-
-{font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-cursor: pointer;
-color: greenyellow;
-padding-left: 15px;
-font-size: 3rem;
-margin-left: 15px;
-font-family:'Domine', serif;
-    }
-
-  h1:hover{
-color:white;
-text-shadow: 1px 1px 2px black, 0 0 1em greenyellow, 0 0 0.2em greenyellow;
-
-    }
-
-
-
-
- /* nav ensemble des items de droite */
-
- .navItemRight
-
-{font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
- display: flex;
-align-items: center;
-color: greenyellow;
-}
-
-/* nav item de menu */
-
-#iconsNav
-{cursor: pointer;
-margin-right: 20px;
-font-size: 3em; 
-color: silver}
-
-#iconsNav:hover{
-  transform: scale(1.1);
-  color:white;
-  text-shadow: 1px 1px 2px black, 0 0 1em greenyellow, 0 0 0.2em greenyellow;
-}
-
-/* nav animation */
-
-@keyframes backgroundTransition {
-
-    from{transform: translateX(8000px);
-        color:black;
-        background-color: white;
-        }
-    to{transform: translateX(0px);
-        color:white;
-        background-color: black;
-        }    
-    }
-
-/* corps de page  */
-
-    main
-
-{ border-top: silver 1px solid;
-background-color:black;
-width: 100%;
-height: 90vh;
-animation-name: animationMain;
-animation-duration: 3s;
-margin:0
-}
-
-@keyframes animationMain {
-
-from{transform: translateX(-8000px);
-       
-        }
-to{transform: translateX(0px);
-        
-        }    
-    }
-
-/* caroussel */
-
-.carousel {
-    position: relative;
-    color: silver;
-    width: 100%
-  
-  }
-  
-  .carousel__item {
-    height: 300px;
-    display: none;
-    height: 80vh;
-    width:100%
-  }
-  
-  .carousel__item--selected {
-    display: block;
-  }
-  
-  .carousel__nav {
-    width: 100%;
-    padding: 20px 0;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    text-align: center;
-  }
-  
-  .carousel__button {
-    width: 10px;
-    height: 10px;
-    display: inline-block;
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 50%;
-    margin: 0 5px;
-    cursor: pointer;
-  }
-
-
-  
-  .carousel__button--selected {
-    background: greenyellow;
-  }
-
-  h3{color: greenyellow;
-    font-family: 'Domine', serif;
-
-    }
-
-  .tittle{font-family: 'Press Start 2P', cursive;
-
-    }
-
-
-  /* première box de gauche */
-
-
-  .first_caroussel
-{display:flex;
-height: 100%;
-width: 100%;
-justify-content: space-between;}
-
-
-.first__left__box{
-    display: flex;
-align-items:center;
-flex-direction: column;
-    width: 50%;
-    height: 100vh;
-    font-size : 1.5rem
-}
-
-
-.profilImage {width : 80%;
-    opacity: 0.6;
-    border-top: 2px solid greenyellow;
-    animation-name: profilPicture;
-    animation-duration: 11s;}
-    
-@keyframes profilPicture {
-      from{opacity: 0;}
-      to{opacity:0.6}
-    }
-
-    /* première box de droite */
-
-.first__right__box{
-  width:50%;
-  height: 100vh;
-}
-
-
-
-#first__box__fleche__right{
-  animation-name : next_effect;
-  animation-duration: 3s;
-  transform: scale(0.7);
-  animation-iteration-count: infinite;
-  cursor:pointer  
-} 
-
-#first__box__fleche__right:hover{
-  color:white;
-  text-shadow: 1px 1px 2px black, 0 0 1em greenyellow, 0 0 0.2em greenyellow;
-}
-
-
-@keyframes next_effect {
-
-  0%{transform: scale(0.5);
-         
-          }
-  50%{transform:scale(0.8);
-          
-          }    
-    100%{transform:scale(0.5);
-          
-          } 
-      }
-
- /* deuxième box de gauche */
-
-
- .second_caroussel
- {display:flex;
-  flex-wrap: wrap;
- height: 80vh;
- width: 100%;
- border-bottom: 2px silver solid}
-
-.all_box_left2 
-{display: flex;
-  justify-content: center;
-align-items: center;
-width:50%;}
-
-.secondbox__Left__element2 a, ul
-{text-decoration: none;
-color: silver;
-font-weight: bold;
-text-align: start;}
-
-.secondbox__Left__element2 a:hover
-{  color:white;
-  text-shadow: 1px 1px 2px black, 0 0 1em greenyellow, 0 0 0.2em greenyellow;}
-
-
-.fleche__gauche
-{font-size: 15em;
-  display: flex;
-  height:100%;
-  justify-content: flex-start;
-  align-items: center;
-background-image: url("./image/BG_Left.jpg");
-background-repeat: no-repeat;
-background-size: cover;
-background-position:center;
-width:50%
-}
-
-.fleche_droite
-{font-size: 15em;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-background-image: url("./image/BG_Right.jpg");
-background-repeat: no-repeat;
-background-size: cover;
-background-position:center;
-width:50%;
-height:100%;
-}
-
-
-.div__gauche{
-  background-image: url('./image/bgCase_Left.jpg');
-  background-position: center;
-  margin-right:25px;
-}
-
-.firstBox_Left_element3 img
-{width: 10%;}
-
-
-/* second box right */
-
-
-.all_box_right2
-{  display: flex;
-  justify-content: center;
-align-items: center;
-width: 50%;}
-
-
-
-
-.div__gauche, .div__droite
-{display: flex;
-  justify-content: center;
-  height: 50vh;
-  border: 2px silver solid;
-  border-radius: 30px;
-  align-items: center;
-  flex-direction : column;
-  text-align:center;
-  font-size: 1em;
-  width:50%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  text-overflow: ellipsis;
-padding:100px }
-
-
-.div__droite{
-  background-image: url('./image/bgCase_right.jpg');
-  background-position: center;
-  margin-left:25px;
-  font-size: 0.8em;
-
-}
-
-/* ------------------------------------ */
-      
-
-
-
-
-
-
-/* troisieme caroussel */
-
-.thirdly_caroussel
-{display:flex;
-  height: 80vh;
-  width: 100%;
-  border-bottom: 2px silver solid;
-}
-
-.div__droite__thirdly__box
-{display:flex;
-justify-content:center;
-width:100%;
-align-items: center;
-}
- 
-.job li{ text-align: start;
-  padding-top: 15px
-}
-
-
-/* code commun */
-
-.fleche_gauche_second, .fleche_droite_second, .fleche_gauche_thirdly, .fleche_droite_first1{
-  font-size: 15em;
-  display: flex;
-  align-items: center;
-  height:100%;
-  width:50%;
-  background-repeat: no-repeat;
-background-size: cover;
-background-position:center;
-
-}
-
-.fleche_droite_first1{
-width: 100%;
-}
-
-
-.fleche_gauche_second, .fleche_gauche_thirdly{
-  justify-content: flex-start;
-background-image: url("./image/BG_Left.jpg");
-
-
-}
-
-.fleche_droite_second, .fleche_droite_first1{
-  justify-content: flex-end;
-background-image: url("./image/BG_Right.jpg");
-}
-
-
-/* responsive */
-
-
-@media (min-width: 1001px) and (max-width: 1365px ) {
-
-  .fleche_gauche_second, .fleche_droite_second, .fleche_gauche_thirdly{width: 50%
-  }
-.div__gauche, .div__droite
-{width: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  height:50%; 
-  width: 50%;
-  background-repeat: no-repeat;
-  background-position:left;
-  background-size:cover;
-  background-image: url("./image/bgCase_Left.jpg");
-  padding:0px;
-  margin:15px;
-  font-size:0.8em
-
-}
-
-.div__gauche, .div__droite h3{font-size:0.7em
-
-}
-
-
-.firstBox_Left_element3
-{margin-top:50px}
-
-.all_box_right2, .all_box_left2{
-  width:50%;
-  height:100%;
-  display:flex;
-  justify-content:center;
-
-  
-}
-
-.div__droite
-{justify-content: flex-start;}
-
-.first{visibility:hidden;
-width:0px;
-height:0px}
-
-.firstBox____element1{
-  visibility: hidden;
-}
-body{
-  height:100vh;
-  background-color:black;
-   overflow: scroll;
-}
-
-
-
-main{
-  height:100vh;}
-
-
-
-.carousel{
-  height:80vh;
-
-}
-
-.second_caroussel{
-  height:80vh;
-  justify-content: center;
-  display:flex;
-  flex-wrap: nowrap;
-}
-
-
-.carousel__item{
-  height:100%;
-  width:100%;
-  background-color: black
-  
-}
-
-.thirdly_caroussel{
-  height:100%;
-  display:flex;
-  justify-content:center;
-}
-
-.first__left__box{width: 50%;
-height:150%;
-padding:0px}
-
-.profilImage{
-  width:130%
-}
- 
-
-
- .first_caroussel{
-   height:100%
- }
-
-
-
- .first__right__box{
-  width:50%
- }
-
-.secondbox__Left__element2 ul{
-  font-size: 1.3em;
-}
-
-}
-
-
-@media (max-width: 1001px) {
-  .fleche_gauche_second, .fleche_droite_second, .fleche_gauche_thirdly, .first__right__box{
-    visibility: hidden;
-    width:0px;
-    height: 0px;
-  }
-
-  .first{visibility:hidden;
-    width:0px;
-    height:0px}
-    
-    .firstBox____element1{
-      visibility: hidden;
-    }
-    
-    
-    .div__droite
-{justify-content: flex-start;
-  font-size:0.8em;}
-  
-  
-  .div__gauche, .div__droite
-  {width: 50%;
-    margin:10px; 
-height:110%;
-    background-repeat: no-repeat;
-    background-position:left;
-    background-size:cover;
-    background-image: url("./image/bgCase_Left.jpg");
-    padding:30px;
-  }
-  
-  .all_box_right2, .all_box_left2{
-    width:100%;
-    height:50%;
-    display:flex;
-    justify-content:center;
-    height:50%
-  
-    
-  }
   
   body{
-    height:100vh;
-    background-color:black;
+    background: linear-gradient(rgb(235, 236, 231), rgb(255, 255, 255));
+    width: 100%;
+    height:100vw;
+    margin:0px;
+    font-family: 'Raleway', sans-serif;
+    overflow: hidden;
   }
-  
-  
-  
-  main{
-    height:100%;}
 
-    h3{
-      font-size: 1.5em;
+  .title{
+    color: transparent;
+    font-size:6vw;
+    background: url("./images/fall-autumn-red-season.jpg") repeat;
+    background-position: 40% 50%;
+    -webkit-background-clip: text;
+    line-height:90px;
+    letter-spacing: -8px;
+    padding:10px;
+    text-shadow: black 0.1em 0.1em 0.3em
+  }
+  .subtitle{
+    display:flex;
+    justify-content: start;
+    margin-left:50px;
+    text-transform: uppercase;
+  }
+
+  .header__Left{
+      display:flex;
+      flex-direction:column;
+      justify-content: center;
+  }
+
+
+
+  .allBox{
+      display: flex;
+      justify-content: space-around;
+      align-content: center;
+      height:30vw;
+      width:100%;
+      
+  }
+
+ 
+  @keyframes anim {
+    0% {
+      transform: translatey(1400px);
+      opacity: 0;
+  
     }
-  
-  
-  
-  .carousel{
-    height:80vh;
-  
-  }
-  
-  .second_caroussel{
-    height:100%;
-    display:flex;
-    flex-direction :column;
-    flex-wrap: nowrap;
-    background-image: url("./image/BG_Left.jpg");
-    background-repeat: no-repeat;
-    background-position:left;
-    background-size:cover;
-  }
-  
-  
-  .carousel__item{
-    height:100%;
-    width:100%;
-    background-color: black
-    
-  }
-  
-  .thirdly_caroussel{
-    height:100%;
-    display:flex;
-    justify-content:center;
-    flex-direction: column;
-    background-image: url("./image/BG_Left.jpg");
-    background-repeat: no-repeat;
-    background-position:left;
-    background-size:cover;
-  }
-  
-  .first__left__box{width: 100%;}
+
+
+    100% {
+      transform: translatey(0);
+      opacity: 1;
    
-  nav{display: flex;
-  flex-wrap: wrap;
-height: 10vh;}
-  
-   .first_caroussel{
-     height:100%
-   }
-  
-  
-  
-   .first__right__box{
-     height:0px
-   }
-
-  .div__droite__thirdly__box, .div__droite{
-    height:50%;
-  }
-
-  .div__droite__thirdly__box{
-    display: flex;
-    align-content: center;
-  }
-
-  .div__gauche, .div__droite
-  {width: 80%;
-    height:80%;
-    padding-bottom:15px
-
-  }
-
-  .div__gauche{
-    font-size:0.8em;
-    padding-top:2px;
-    padding-bottom: 15px
-  }
-
-  .div__droite{
-    padding-bottom: 10px
-  }
-
-  .div__droite__thirdly__box{
-    height:auto
     }
-  }
-  
-
-
-
-  @media (max-width: 470px) {
-
-
-
-    .carousel__nav{
-      margin-bottom: 50px;
-    }
-
-.div__droite{
-  font-size: 1.2em
 }
 
-.div__gauche{
-  font-size: 1.2em
+
+  .box1, .box2{width: 40%;
+height:80%;
+border-radius:10px;
+box-shadow: 0 0 0.5em black, 0 0 5em black, 0 0 0.5em black;
+border:2px solid black
 }
-.carousel
-{height:90vh}
 
-.second_caroussel{
-  height:90%;
-  font-size: 0.7em
+.box1{background-image: url('./images/ph.jpg');
+background-position: center;
+background-size: cover;
+animation-name: anim;
+      animation-duration: 3s;
+      transform:translatex(0px)}
 
-  }
-  .div__droite__thirdly__box{
-    height:auto
+
+@keyframes anim {
+    0% {
+      transform: translatex(-1400px);
+      opacity: 0;
+  
     }
 
 
-  #iconsNav{font-size:1.3em}
-
-h1{font-size:1.3em}
-
-
-h3{text-align: center;
-
-  font-size:1em
+    100% {
+      transform: translatex(0);
+      opacity: 1;
+   
+    }
 }
 
-.job{visibility: hidden;}
+.box2{background-image: url('./images/mobile-phone-smartphone-tablet-white-40739.jpeg');
+    background-position: center;
+    background-size: cover;
+    animation-name: anim2;
+    animation-duration: 3s;
+    transform:translatex(0px)}
 
-  }
+
+@keyframes anim2 {
+    0% {
+      transform: translatex(1400px);
   
+    }
 
-  @media (max-width: 352px) {
 
-    nav{font-size :0.5em;
+    100% {
+      transform: translatex(0);
+   
+    }}
+
+
+   
+      
+
+    .box1:hover, .box2:hover{box-shadow: 0.2em 0.2em 0.5em black, 0.2em 0.2em 5em black, 0 0 0.5em black;}
+
+
+
+    nav{ width: 80%;
+        font-size:1vw;}
+
+    nav ul{display: flex;
+    margin-bottom: 30px;
+}
+
+    nav ul li{
+        padding-right : 50px;
+        list-style-type: none;
+        cursor: pointer;
+        text-decoration: none;
+color:black;
+
+    }
+
+    nav ul li a{color:black;
+    text-decoration: none;
+}
+
+    li:hover{
+        font-weight: bold;
+    }
+
+    header{ display:flex;
+        justify-content: space-between;
+        align-content:center;
     width:100%;
-  margin:0px}
+height:15vw;
+margin-bottom:60px;
+box-shadow: 0 0 0.5em black, 0 0 5em black, 0 0 0.5em black;}
 
-    h3{font-size: 1em;}
-    h1{font-size: 2.8em;}
+    .contact{ display:flex;
+        justify-content:flex-end;
+        align-items:center;
+        margin-right: 20px;
+        height:100%;
+    width:50%;
+    font-size:1vw;}
 
-    .div__droite{
-      font-size: 1em
-    }
-
-  }
-  
-  @media (max-height: 768px) {
+    .contact a {color: black;
+    text-decoration: none;}
     
-    .secondbox__Left__element2{
-      font-size:0.8em
+    p{padding:5px;
+    cursor:pointer}
+
+    p:hover{font-weight: bold;}
+
+    .ongletContact{text-align: center;
+        width:100%
     }
 
+    i{
+        background-color:black;
+        color:white;
+        border-radius:50%;
+        padding:15px
+    }
+
+    @media screen and (max-width: 1280px)
+{
+
+    body{overflow:visible;
+        height:80vw}
+
+    .allBox{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center; 
+        height:60vw  
+    }
+
+    .box1, .box2{width: 80%;
+        height:100%;
+        margin: 30px;
+        border-radius:10px;
+        box-shadow: 0 0 0.5em black, 0 0 5em black, 0 0 0.5em black;
+        border:2px solid black
+        }
+
+        nav{font-size:1.8vw}
+
+        .contact{font-size: 1.5vw}
+
+        .title{font-size:6vw}
+   
+}
+
+
+
+@media screen and (max-width: 860px)
+{
+
+   header{flex-direction: column;
+height:40vw;
+align-items: center;
+padding-bottom:80px}
+
+.title{
+    font-size:10vw;
+    padding:10px;
+    text-shadow: black 0.1em 0.1em 0.3em
   }
+
+  .allBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center; 
+    height:100vw  
+}
+
+nav{
+    font-size: 2vw;
+}
+
+  
+  nav{
+      width:100%;
+      justify-content:center
+  }
+
+  nav ul{
+      justify-content: center;
+  }
+
+  .contact{margin:0px;
+    width:100%;
+font-size:2vw}
+
+.header__Left{
+    width:100%;
+    align-items:center;
+}
+
+  
+   
+}
+
+@media screen and (max-width: 520px)
+{
+    header{flex-direction: column;
+        height:50vw;
+        align-items: center;
+        padding-bottom:100px}
+        
+        .title{
+            font-size:15vw;
+          
+          }
+        
+          .allBox{
+
+            height:120vw  
+        }
+        
+        nav{
+            font-size: 3vw;
+        }
+        
+          .box1, .box2{
+              height:100%
+          
+         
+            }
+        
+          nav{
+              width:100%;
+              justify-content:center
+          }
+        
+          nav ul{
+              justify-content: center;
+          }
+        
+          .contact{margin:0px;
+            width:100%;
+        font-size:3vw}
+        
+        .header__Left{
+            width:100%;
+            align-items:center;
+        }
+
+
+}
