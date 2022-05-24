@@ -129,7 +129,7 @@ border:3px black solid
         body{height:100%;
             position:initial;
         overflow:scroll;
-                  height:100%}
+        }
 
         section{flex-direction:column;
         justify-content:center;
