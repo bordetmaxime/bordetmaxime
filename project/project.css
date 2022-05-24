@@ -126,7 +126,10 @@ border:3px black solid
 
     @media screen and (max-width: 1280px)
     {
-        body{height:100%}
+        body{height:100%;
+            position:initial;
+        overflow:scroll;
+                  height:100%}
 
         section{flex-direction:column;
         justify-content:center;

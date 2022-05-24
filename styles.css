@@ -184,14 +184,16 @@ box-shadow: 0 0 0.5em black, 0 0 5em black, 0 0 0.5em black;}
 {
 
     body{
-        height:80vw}
+        height:max-content;
+        position:fixed}
 
     .allBox{
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         align-items: center; 
-        height:60vw  
+        height:60vw  ;
+        
     }
 
     .box1, .box2{width: 80%;
@@ -199,7 +201,8 @@ box-shadow: 0 0 0.5em black, 0 0 5em black, 0 0 0.5em black;}
         margin-bottom: 30px;
         border-radius:10px;
         box-shadow: 0 0 0.5em black, 0 0 5em black, 0 0 0.5em black;
-        border:2px solid black
+        border:2px solid black;
+        animation:none
         }
 
         nav{font-size:1.8vw}
