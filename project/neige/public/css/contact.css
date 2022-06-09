@@ -1,0 +1,139 @@
+#ecrire
+
+{padding-top: auto;
+  display:flex;
+  flex-direction: column;
+   align-items: center;
+  border-radius: 10px;
+width:100%;
+height: 700px;
+margin-left: auto;
+margin-right: auto;
+margin-top: auto;
+margin-bottom: auto;}
+
+#ecrire h1
+{color : black;
+  font-family: "Lobster";
+text-align: center;}
+
+
+form .corps-formulaire
+{  display:flex;
+    flex-wrap: wrap;
+  width : 80%;
+  background-color: silver;
+  border-radius: 30px;
+  border : 1px black solid;
+  height: 500px
+  
+}
+
+form .corps-formulaire .groupe
+
+{ 
+  margin-top: 20px;
+display : flex;
+flex-direction: column;
+margin-left: 50px;
+}
+
+form .corps-formulaire .gauche .groupe input
+
+{margin-top : 5px;
+padding : 10px 5px 10px 30px ;
+border: 2px solid black;
+outline-color : black;
+border-radius : 5px; 
+margin-left: 5px ;
+}
+
+form .corps-formulaire .gauche .groupe i
+
+{ position : absolute;
+  left : 0;
+  top : 25px;
+  padding : 9px 8px;
+  color : black;
+  margin-left: 5px;
+}
+
+form .corps-formulaire .droite
+{ margin-left : 60px;
+}
+form .corps-formulaire .droite .groupe
+
+{height: 100%;
+    padding-left: 10px;
+}
+
+form .corps-formulaire .droite .groupe textarea 
+{margin-top: 5px;
+
+background-color: #f8f8f8 ;
+border : 2px solid black;
+margin-right: 2px;
+border-radius : 5px;
+outline: none;
+resize : none;
+height : 72%}
+
+form .pied-formulaire button {display: flex;
+  margin-top : 10px;
+  border-radius : 5px;
+  border: 2px black solid;
+  background-color : white;
+  padding: 10px 20px;
+  font-size: 15px;
+  font-family: "Architects";
+  cursor:pointer;
+  margin-left: 80px
+}
+
+form .pied-formulaire button:hover {
+transform: scale(1.05)
+}
+
+#magie
+
+{
+  background : pink ;
+border : 1px solid black;
+margin-left : 600px;
+width : 990px;
+height: 460px;
+padding : 10px;
+margin-top: -490px;
+}
+
+.separation2
+
+{ width: 85%;
+  height : 1px;
+  background-color : grey; 
+margin-left: 60px;}
+
+  #magie h1
+
+  {font-family: "Lobster";
+  text-align: center; 
+margin-top : 45px;
+margin-left: 5px}
+
+  #magie h3
+
+  { text-align: center;
+    font-size: 18px;
+    font-family: "Architects";
+    margin-bottom : 500px;
+  color : black }
+
+  #logo
+
+  {border : 1PX black solid;
+    width : 500px;
+height: 460px ;
+margin-left: 30px;
+padding : 10px;}
+
+nav{visibility: visible;}

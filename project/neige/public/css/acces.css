@@ -1,0 +1,21 @@
+
+.map{
+    padding-top: 200px;
+    display:flex;
+justify-content: center;
+margin-bottom:500px;
+height:100%
+}
+
+
+.itineraire
+
+{
+align-items: center;
+width: 80%;
+    height: 50vh;
+    border: 0;
+
+ }
+
+    nav{visibility: visible;}

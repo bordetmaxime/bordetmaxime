@@ -1,0 +1,68 @@
+<%- include('./partials/header') %>
+    
+        <section id="pageproduit" class="flex-column-centre">
+
+            <div id="blocTitrePanier" class="flex-strat size80">
+      
+        </div>
+         
+        <div id="basket-fiche" class="flex-around">
+          
+
+
+            
+            <% for(const product of products) { %>
+            
+            <div id="injectJS">
+                <div id="basketProduit" class="flex-around">
+                <div id="blocImage">
+                    <img src="./images/<%=product.picture_name%>.jpg" alt="image">
+                </div>
+                <div id="blocProduit" class="flex-column-around">
+                    <h2><%=product.name%></h2>
+                    <p><%=product.price%>€</p>
+                </div>
+                <div id="bloc-change-produit" class="flex-around">
+<div class="flex-centre"> 
+   
+</div> 
+<div><a href="/basket/delete/<%=product.id%>"><i class="fas fa-trash "></i></a></div>
+                </div>
+                </div>
+            </div>
+            
+
+            <% } %>
+        </div>
+
+ 
+            <div id="basket-recap">
+                <h2 class="titre-recap">Récapitulatif</h2>
+                <div class="flex-around">
+                    <p id="nbArticle"><%=products.length%> article</p>
+                    <p id="prixArticle">0e</p>
+                </div>
+                <div class="trait-design"></div>
+                <div class="dates">
+              
+                    <label for="story">Merci d'indiquer vos dates:</label>
+                    <textarea id="story" name="story"
+                     rows="5" cols="33"></textarea>
+</div>
+                </div>
+                <div class="button_basket">
+                    <a class="continuer" href="/">
+        <i class="fas fa-chevron-left"></i> CONTINUER MES ACHATS 
+                 <a id="continueCommande" class="flex-around" href="/redirection">
+                        ENVOYER LA DEMANDE DE RESERVATION <i class="fas fa-chevron-right"></i>
+                    </a> 
+    </a>
+                </div>
+            </div>
+
+   
+
+
+    </section>
+    </body>
+</html>

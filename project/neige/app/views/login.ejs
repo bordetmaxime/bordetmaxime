@@ -1,0 +1,31 @@
+<%- include('partials/header') %>
+
+<div class="form_inscription">
+
+        <form action="/login" method="POST" class="form-signin">
+          
+
+            <div class="form-label-group">
+                <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp"
+                    placeholder="Votre courriel" required>
+              
+            </div>
+
+            <div class="form-label-group">
+                <input type="password" class="form-control" id="password" name="password"
+                    placeholder="Votre mot de passe" required>
+           
+            </div>
+            <div class="checkbox mb-3">
+                <label>
+                    <input type="checkbox" value="remember-me"> Se souvenir de moi
+                </label>
+            </div>
+            <button class="btn btn-lg btn-primary btn-block" type="submit">Se connecter</button>
+           
+        </form>
+
+        </div>
+ 
+
+<%- include('partials/footer') %>
