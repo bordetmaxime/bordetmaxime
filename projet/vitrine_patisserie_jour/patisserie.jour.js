@@ -1,5 +1,5 @@
 const target = document.getElementById("target");
-let array = [ "faire plaisir ", "patisser "];
+let array = [ "faire plaisir ", "pâtisser "];
 let wordIndex = 0;
 let letterIndex = 0;
 
