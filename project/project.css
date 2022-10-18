@@ -17,7 +17,6 @@ section{
 {
     width:30vw;
     height: 350px;
-    text-align:center;
     font-family:'Kanit', sans-serif;
     color: rgba(0, 0, 0, 0.664);
     margin:10px;
@@ -35,7 +34,7 @@ section{
     background-image: url("../images/pastrylover.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    height:100%;
+    height:80%;
 box-shadow: 0 0 0.5em black, 0 0 5em black, 0 0 0.5em black;
 cursor:pointer;
 border:3px black solid;
@@ -62,10 +61,10 @@ border:3px black solid;
     }}
 
 .secondBox header{
-    background-image: url("../images/ecomerce.jpg");
+    background-image: url("../images/familydeck.png");
     background-size: cover;
     background-repeat: no-repeat;
-    height:100%;
+    height:80%;
 box-shadow: 0 0 0.5em black, 0 0 5em black, 0 0 0.5em black;
 cursor:pointer;
 border:3px black solid
@@ -93,10 +92,10 @@ border:3px black solid
     }}
 
 .thirdlyBox header{
-    background-image: url("../images/jeux.jpg");
+    background-image: url("../images/bodychange.png");
     background-size: cover;
     background-repeat: no-repeat;
-    height:100%;
+    height:80%;
 box-shadow: 0 0 0.5em black, 0 0 5em black, 0 0 0.5em black;
 cursor:pointer;
 border:3px black solid
@@ -171,9 +170,9 @@ margin-top:0px}
     }
 
     .firstBox, .secondBox, .thirdlyBox
-    {margin:80px;
-        height:100px;
-        width:80vw;          
+    {    margin: 0px;
+        height: 100%;
+        width: 60vw;  
       
     }
 
