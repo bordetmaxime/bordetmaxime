@@ -81,6 +81,7 @@ border:3px black solid
 .fourthBox header{
     background-image: url("../images/datepicker.jpg");
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     height:50vh;
 box-shadow: 0 0 0.5em black, 0 0 5em black, 0 0 0.5em black;
