@@ -3,10 +3,42 @@
 
   
   body{
-    background: linear-gradient(rgb(235, 236, 231), rgb(255, 255, 255));
+    background: black;
     width: 100%;
     margin:0px;
     font-family: 'Raleway', sans-serif;
+    color:white
+  }
+  
+  .buttonBox{
+display: flex;
+justify-content: center;
+
+  }
+
+  .buttonBox button{
+    margin:10px;
+    font-size:1.2rem;
+    background-color:black;
+    color:white;
+    border-radius : 10px;
+    padding:5px 15px;
+    border:1px white solid;
+    font-weight: bold;
+    text-transform:uppercase;
+    font-family: sans-serif;
+  }
+
+  .titleHomePage{
+    text-align: center;
+    font-size:5rem;
+    margin-bottom:15px;
+  }
+
+  .buttonBox button:hover{
+    cursor:pointer;
+    border: 2px white solid;
+    color:lightblue
   }
 
   .title{
@@ -31,6 +63,11 @@
       display:flex;
       flex-direction:column;
       justify-content: center;
+  }
+
+  .listHomePage{
+    margin-top:2px;
+    margin-bottom:25px;
   }
 
 
@@ -61,15 +98,14 @@
 }
 
 
-  .box1, .box2{width: 40%;
+  .box1{width: 40%;
 height:80%;
 border-radius:10px;
-box-shadow: 0 0 0.5em black, 0 0 5em black, 0 0 0.5em black;
-border:2px solid black
+border:2px solid white
 }
 
-.box1{background-image: url('./images/ph.jpg');
-background-position: center;
+.box1{background-image: url('./images/maximeb.JPG');
+background-position: left;
 background-size: cover;
 animation-name: anim;
       animation-duration: 3s;
@@ -91,9 +127,7 @@ animation-name: anim;
     }
 }
 
-.box2{background-image: url('./images/mobile-phone-smartphone-tablet-white-40739.jpeg');
-    background-position: center;
-    background-size: cover;
+.box2{
     animation-name: anim2;
     animation-duration: 3s;
     transform:translatex(0px)}
@@ -115,7 +149,7 @@ animation-name: anim;
    
       
 
-    .box1:hover, .box2:hover{box-shadow: 0.2em 0.2em 0.5em black, 0.2em 0.2em 5em black, 0 0 0.5em black;}
+    .box1:hover, {box-shadow: 0.2em 0.2em 0.5em white, 0.2em 0.2em 5em white, 0 0 0.5em white;}
 
 
 
@@ -131,25 +165,22 @@ animation-name: anim;
         list-style-type: none;
         cursor: pointer;
         text-decoration: none;
-color:black;
+color:white;
 
     }
 
-    nav ul li a{color:black;
+    nav ul li a{color:white;
     text-decoration: none;
 }
 
-    li:hover{
-        font-weight: bold;
-    }
-
+   
     header{ display:flex;
         justify-content: space-between;
         align-content:center;
     width:100%;
 height:15vw;
 margin-bottom:60px;
-box-shadow: 0 0 0.5em black, 0 0 5em black, 0 0 0.5em black;}
+box-shadow: 0 0 0.5em white, 0 0 5em white, 0 0 0.5em white;}
 
     .contact{ display:flex;
         justify-content:flex-end;
@@ -159,11 +190,12 @@ box-shadow: 0 0 0.5em black, 0 0 5em black, 0 0 0.5em black;}
     width:50%;
     font-size:1vw;}
 
-    .contact a {color: black;
+    .contact a {color: white;
     text-decoration: none;}
     
     p{padding:5px;
-    cursor:pointer}
+    cursor:pointer;
+  color:white}
 
     p:hover{font-weight: bold;}
 
@@ -172,8 +204,8 @@ box-shadow: 0 0 0.5em black, 0 0 5em black, 0 0 0.5em black;}
     }
 
     i{
-        background-color:black;
-        color:white;
+        background-color:white;
+        color:black;
         border-radius:50%;
         padding:15px
     }
@@ -181,28 +213,31 @@ box-shadow: 0 0 0.5em black, 0 0 5em black, 0 0 0.5em black;}
     @media screen and (max-width: 1280px)
 {
 
-    body{
-      overflow:visible;
-        height:max-content;
-      }
-
-    .allBox{
+        .allBox{
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         align-items: center; 
-        height:60vw  ;
+        height:100%  ;
         
     }
 
-    .box1, .box2{width: 80%;
-        height:100%;
+    .box1, .box2{width: 60%;
+height: 100%;
         margin-bottom: 30px;
         border-radius:10px;
-        box-shadow: 0 0 0.5em black, 0 0 5em black, 0 0 0.5em black;
-        border:2px solid black;
+        box-shadow: 0 0 0.5em white, 0 0 5em white, 0 0 0.5em white;
+        border:2px solid white;
         animation:none
         }
+
+     
+
+        .box1{
+          height:100vh
+        }
+
+       
 
         nav{font-size:1.8vw}
 
@@ -216,6 +251,18 @@ box-shadow: 0 0 0.5em black, 0 0 5em black, 0 0 0.5em black;}
 
 @media screen and (max-width: 860px)
 {
+  .box2{
+    padding:10px;
+  }
+.titleHomePage{
+font-size:1.6rem
+}
+
+.buttonBox button{
+  font-size:0.8rem
+}
+
+
 
    header{flex-direction: column;
 height:40vw;
@@ -225,7 +272,7 @@ padding-bottom:80px}
 .title{
     font-size:10vw;
     padding:10px;
-    text-shadow: black 0.1em 0.1em 0.3em
+    text-shadow: white 0.1em 0.1em 0.3em
   }
 
   .allBox{
@@ -274,21 +321,16 @@ font-size:2vw}
           
           }
         
-          .allBox{
-
-            height:120vw  
-        }
+         
 
         
         nav{
             font-size: 3vw;
         }
         
-          .box1, .box2{
-              height:100%
-          
+             
          
-            }
+     
         
           nav{
               width:100%;
