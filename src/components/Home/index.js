@@ -10,15 +10,16 @@ return(
 
 <Header/>
 
-<div className="relative flex flex-col-reverse py-16 lg:py-0 lg:flex-col">
+<div className="relative flex flex-col-reverse py-0 mt-10 md:py-16 md:mt-20 lg:py-0 lg:flex-col homeResponsive">
       <div className="w-full max-w-xl px-4 mx-auto md:px-0 lg:px-8 lg:py-20 lg:max-w-screen-xl">
         <div className="mb-0 lg:max-w-lg lg:pr-8 xl:pr-6">
-          <h2 className="mb-5 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none md:text-center responsiveTitle">
+          <h2 className="mb-5 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none md:text-center responsiveTitle text-lime-400 
+		  tracking-in-expand-fwd">
             Welcome To My Portfolio
           </h2>
           <p className="mb-5 text-base text-gray-700 md:text-lg md:text-center">
-		  Hello, I'm Maxime Bordet, 
-		  thank's to come in on my web Portfolio, if you have a recommandation, thank's to tell me 😉
+		 I'm Maxime Bordet, 
+		  thank's to come in on my web Portfolio, if you have a recommandation, thank's to tell me. 😉
 		 
           </p>
 
@@ -27,14 +28,14 @@ return(
             <Link
               to="/projects"
               className="inline-flex items-center text-black justify-center w-full h-12 px-6 font-medium tracking-wide transition duration-200 
-			  rounded shadow-md md:w-auto bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
+			  rounded shadow-md md:w-auto bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none border-solid border"
             >
               See my Projects
             </Link>
           </div>
 
           <div className="flex flex-col items-center">
-            <div className="mb-2 text-sm text-gray-600 md:mb-2">Discover Me</div>
+            <div className="mb-2 text-sm text-gray-600 md:mb-2 text-lime-400">Discover Me</div>
             <div className="flex items-center space-x-4">
               <div className="flex items-center">
                 <a
