@@ -17,7 +17,7 @@ return(
 		  tracking-in-expand-fwd">
             Welcome To My Portfolio
           </h2>
-          <p className="mb-5 text-base text-gray-700 md:text-lg md:text-center">
+          <p className="mb-5 text-center text-gray-700 md:text-lg md:text-center">
 		 I'm Maxime Bordet, 
 		  thank's to come in on my web Portfolio, if you have a recommandation, thank's to tell me. 😉
 		 
