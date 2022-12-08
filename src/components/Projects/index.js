@@ -7,6 +7,7 @@ import Frenchinformation from '../../assets/french-information.jpg'
 import Githubsearch from '../../assets/github-search.jpg'
 import Pastrylover from '../../assets/pastrylover.jpg'
 import Digitalize from '../../assets/digitalize.jpg'
+import SYB from '../../assets/syb.jpg'
 import './style.css'
 
 const Projects = () => {
@@ -43,9 +44,29 @@ const Projects = () => {
           </div>
         </div>
       </a>
+
+	  <a href="https://digitalize-you.netlify.app/" class="p-4 md:w-1/3 fade-in2 ">
+        <div class="h-full border border-solid border-lime-800  border-opacity-60 rounded-lg overflow-hidden">
+		<img class="lg:h-48 p-6 border-b border-solid border-lime-400 md:h-36 w-full object-cover object-top" src={SYB} alt="blog"/>
+          <div class="p-6">
+            <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">ANGULAR / TAILWIND - NODEJS / EXPRESS / POSTGRES / SEQUELIZE / DOTENV</h2>
+            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">SaveYourBrain</h1>
+            <p class="leading-relaxed mb-3">SYB is an application of informations stockage </p>
+            <div class="flex items-center flex-wrap">
+              <a href="https://digitalize-you.netlify.app/" class="text-lime-600 hover:text-lime-8000 inline-flex items-center md:mb-2 lg:mb-0">Discover
+                <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M5 12h14"></path>
+                  <path d="M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+             
+            </div>
+          </div>
+        </div>
+      </a>
 	  
 
-  <a href="https://family-deck.surge.sh/" class="p-4 md:w-1/3 fade-in2 ">
+  <a href="https://family-deck.surge.sh/" class="p-4 md:w-1/3 fade-in ">
   <div class="h-full border border-solid border-lime-800 border-opacity-60 rounded-lg overflow-hidden">
   <img class="lg:h-48 p-6 border-b border-solid border-lime-400 md:h-36 w-full object-cover object-center" src={Familydeck} alt="blog"/>
           <div class="p-6">
@@ -65,7 +86,7 @@ const Projects = () => {
 		</a>
 
 	 
-      <a href="https://bodychange.netlify.app/" class="p-4 md:w-1/3 fade-in3 ">
+      <a href="https://bodychange.netlify.app/" class="p-4 md:w-1/3 fade-in4 ">
         <div class="h-full border border-solid border-lime-800  border-opacity-60 rounded-lg overflow-hidden">
           <img class="lg:h-48 p-6 border-b border-solid border-lime-400 md:h-36 w-full object-cover object-top" src={Bodychange} alt="blog"/>
           <div class="p-6">
@@ -85,7 +106,7 @@ const Projects = () => {
       </a>
 
 
-      <a href="https://datepicker-maximeb.netlify.app/" class="p-4 md:w-1/3 0 fade-in4">
+      <a href="https://datepicker-maximeb.netlify.app/" class="p-4 md:w-1/3 0 fade-in5">
         <div class="h-full border border-solid border-lime-800  rounded-lg overflow-hidden">
           <img class="lg:h-48 p-6 border-b border-solid border-lime-400 md:h-36 w-full object-cover object-top" src={Datepicker} alt="blog"/>
           <div class="p-6">
@@ -106,7 +127,7 @@ const Projects = () => {
 
 
 
-	  <a href="https://find-the-repo.netlify.app/" class="p-4 md:w-1/3  fade-in5">
+	  <a href="https://find-the-repo.netlify.app/" class="p-4 md:w-1/3  fade-in6">
         <div class="h-full border border-solid border-lime-800  border-opacity-60 rounded-lg overflow-hidden">
           <img class="lg:h-48 p-6 border-b border-solid border-lime-400 md:h-36 w-full object-cover object-top" src={Githubsearch} alt="blog"/>
           <div class="p-6">
@@ -126,7 +147,7 @@ const Projects = () => {
       </a>
 
 
-	  <a href="https://french-information.netlify.app/" class="p-4 md:w-1/3 fade-in6">
+	  <a href="https://french-information.netlify.app/" class="p-4 md:w-1/3 fade-in7">
         <div class="h-full border border-solid border-lime-800  border-opacity-60 rounded-lg overflow-hidden">
           <img class="lg:h-48 p-6 border-b border-solid border-lime-400 md:h-36 w-full object-cover object-center" src={Frenchinformation} alt="blog"/>
           <div class="p-6">
@@ -146,7 +167,7 @@ const Projects = () => {
       </a>
 
 
-	  <a href="https://bordetmaxime.github.io/pastrylover/" class=" p-4 md:w-1/3 slide-in-left fade-in7">
+	  <a href="https://bordetmaxime.github.io/pastrylover/" class=" p-4 md:w-1/3 slide-in-left fade-in8">
         <div class="h-full border border-solid border-lime-800  border-opacity-60 rounded-lg overflow-hidden">
           <img class="lg:h-48 p-6 border-b border-solid border-lime-400 md:h-36 w-full object-cover object-bottom" src={Pastrylover} alt="blog"/>
           <div class="p-6">
